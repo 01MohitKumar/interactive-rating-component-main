@@ -1,0 +1,173 @@
+/* -
+ Import
+   - */
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+/*  -
+Variables 
+    -  */
+
+:root {
+  --primaryColor: hsl(25, 97%, 53%);
+  --nuetralWhite: hsl(0, 0%, 100%);
+  --nuetralLightGrey: hsl(217, 12%, 63%);
+  /* --nuetralLightGrey: hsl(216, 12%, 54%); */
+  --nuetralDarkBlue: hsl(213, 19%, 18%);
+  --nuetralVeryDarkBlue: hsl(216, 12%, 8%);
+  --fontSizeParagraph: 15px;
+  --borderRadius: 1rem;
+  --mobile: 375px;
+  --desktop: 1440px;
+  --fontFamilyOverpass: "Overpass", sans-serif;
+  --transition: all 0.3s ease;
+}
+
+/*    -
+Global Styles
+      -    */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+p {
+  line-height: 1.5rem;
+  color: var(--nuetralLightGrey);
+}
+
+body {
+  background-color: var(--nuetralVeryDarkBlue);
+  font-family: var(--fontFamilyOverpass);
+  font-size: var(--fontSizeParagraph);
+  min-height: 100vh;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container,
+.thank-you {
+  background-color: var(--nuetralDarkBlue);
+  padding: 1.5rem;
+  border-radius: var(--borderRadius);
+  max-width: 400px;
+}
+
+.main-container img {
+  background-color: hsl(213, 20%, 22%);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.main-container h1 {
+  margin: 2rem 0 1rem;
+  color: var(--nuetralWhite);
+}
+
+.main-container p {
+  color: var(--nuetralLightGrey);
+  margin-bottom: 1rem;
+}
+
+.main-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.main-container ul li button {
+  background-color: hsl(213, 20%, 22%);
+  color: var(--nuetralWhite);
+  font-size: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  padding-top: 0.2rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.main-container ul li button:hover {
+  background-color: var(--primaryColor);
+}
+.main-container ul li button:focus {
+  background-color: var(--nuetralLightGrey);
+}
+
+.btn-submit {
+  background-color: var(--primaryColor);
+  width: 100%;
+  border: none;
+  padding: 0.8rem 0 0.7rem;
+  border-radius: var(--borderRadius);
+  color: var(--nuetralWhite);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-submit:hover {
+  background-color: var(--nuetralWhite);
+  color: var(--primaryColor);
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.thank-you img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.thank-you p.grey {
+  font-size: 0.9rem;
+  background-color: hsl(213, 20%, 22%);
+  color: var(--primaryColor);
+  display: inline-block;
+  padding: 0.2rem 0.5rem 0;
+  border-radius: var(--borderRadius);
+  margin-bottom: 2rem;
+}
+
+.thank-you h2 {
+  color: var(--nuetralWhite);
+  margin-bottom: 1rem;
+}
+
+.thank-you p {
+  margin-bottom: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 14p;
+  align-items: center;
+  color: var(--nuetralWhite);
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
